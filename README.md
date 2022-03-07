@@ -9,3 +9,5 @@ Resumo do contéudo presente neste repositório (mais detalhes nos respectivos d
 t1 (tarefa 1): Aplicação em Python para a leitura e contagem de dados de um arquivo .pcap, gerado pela aplicação ScaPy.
 
 t2 (tarefa 2): Criação deste repositório e de um arquivo com o link para acesso. Juntamente com ideias de datasets que o aluno achou interessante, que serão utilizados nas próximas atividades.
+
+t3 (tarefa 3): Obtenção e descrição do dataset, incluindo: local de obtenção, referência, contagem de amostras, classes e atributos.
