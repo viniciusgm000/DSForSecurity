@@ -11,3 +11,6 @@ t1 (tarefa 1): Aplicação em Python para a leitura e contagem de dados de um ar
 t2 (tarefa 2): Criação deste repositório e de um arquivo com o link para acesso. Juntamente com ideias de datasets que o aluno achou interessante, que serão utilizados nas próximas atividades.
 
 t3 (tarefa 3): Obtenção e descrição do dataset, incluindo: local de obtenção, referência, contagem de amostras, classes e atributos.
+
+t4 (tarefa 4): Definição de um vetor de características, apresentação da quantidade de amostras por classe por meio de uma figura de um gráfico de barras e apresentação do código utilizado para gerar a figura.
+
