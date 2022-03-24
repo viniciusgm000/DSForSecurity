@@ -14,3 +14,40 @@ t3 (tarefa 3): Obtenção e descrição do dataset, incluindo: local de obtenç�
 
 t4 (tarefa 4): Definição de um vetor de características, apresentação da quantidade de amostras por classe por meio de uma figura de um gráfico de barras e apresentação do código utilizado para gerar a figura.
 
+# Exploração de Dados
+
+Explorando o dataset PDFMalware2022, as seguintes características foram extraídas:
+
+pdfsize
+metadata size
+xref Length
+title characters
+images
+text
+header
+obj
+endobj
+stream
+endstream
+xref
+trailer
+startxref
+ObjStm
+JS
+Javascript
+AA
+OpenAction
+Acroform
+JBIG2Decode
+RichMedia
+launch
+XFA
+Colors
+classe
+
+A última, classe, indica a classificação da amostra em um espaço binário.
+Assumindo os valores Malicious (malicioso) e Benign (benigno). O primeiro indica amostras maliciosas que tiveram características parecidas com as benignas na classificação feita na criação do dataset. E a segunda, amostras benignas que tiveram características que as aproximaram de maliciosas.
+
+Segue a distribuição dos dados:
+
+![figure](https://user-images.githubusercontent.com/85434478/159952469-80e983ef-f760-45fe-b686-a84ade1a38d8.png)
