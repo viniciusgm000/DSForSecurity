@@ -108,7 +108,7 @@ Depois (8190 amostras, 3759 maliciosas e 4431 benignas):
 
 # Plotagem
 
-Scatterplot:
+Scatterplot (vermelho = benign, azul = malicious):
 
 ![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t5/scatterplot.png)
 
