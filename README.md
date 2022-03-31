@@ -20,39 +20,39 @@ t5 (tarefa 5): Limpeza/Tratamento dos dados, melhor seleção das característic
 
 Explorando o dataset PDFMalware2022, as seguintes características foram extraídas com base no entendimento sobre elas (algumas não tiveram a diferenciação clara entre si):
 
-pdfsize
-metadata size
-xref Length
-title characters
-images
-text
-header
-obj
-endobj
-stream
-endstream
-xref
-trailer
-startxref
-ObjStm
-JS
-Javascript
-AA
-OpenAction
-Acroform
-JBIG2Decode
-RichMedia
-launch
-XFA
-Colors
-classe
+pdfsize;
+metadata size;
+xref Length;
+title characters;
+images;
+text;
+header;
+obj;
+endobj;
+stream;
+endstream;
+xref;
+trailer;
+startxref;
+ObjStm;
+JS;
+Javascript;
+AA;
+OpenAction;
+Acroform;
+JBIG2Decode;
+RichMedia;
+launch;
+XFA;
+Colors;
+classe;
 
 A última, classe, indica a classificação da amostra em um espaço binário.
 Assumindo os valores Malicious (malicioso) e Benign (benigno). O primeiro indica amostras maliciosas que tiveram características parecidas com as benignas na classificação feita na criação do dataset. E a segunda, amostras benignas que tiveram características que as aproximaram de maliciosas.
 
 Segue a distribuição dos dados:
 
-![figure](https://user-images.githubusercontent.com/85434478/159952469-80e983ef-f760-45fe-b686-a84ade1a38d8.png)
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t4/figure.png)
 
 # Melhor Seleção das Características
 
@@ -68,11 +68,11 @@ Javascript: Número de palavras-chave “/JavaScript”
 
 Por meio das opções de classificação e pesquisa do programa, foi-se escolhido as características que mais prevaleceram em diferentes ranqueamentos e que estiveram acima do limiar 0.5 utilizando o método Information Gain:
 
-
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t5/weka_selection1.png)
 
 As mesmas também prevaleceram em outros métodos:
 
-
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t5/weka_selection2.png)
 
 # Limpeza/Tratamento dos dados
 
@@ -95,18 +95,18 @@ Contagem de dados:
 
 Antes (10025 amostras, 5557 maliciosas e 4468 benignas):
 
-
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t5/figure_before.png)
 
 Depois (8190 amostras, 3759 maliciosas e 4431 benignas):
 
-
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t5/figure_after.png)
 
 # Plotagem
 
 Scatterplot:
 
-
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t5/scatterplot.png)
 
 KMeans com PCA:
 
-
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t5/pca.png)
