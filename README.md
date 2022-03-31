@@ -58,13 +58,13 @@ Segue a distribuição dos dados:
 
 A partir da utilização da ferramenta WEKA, o número de características foi reduzido para 7. 
 
-pdfsize: Tamanho do arquivo
-metadata size: Tamanho da região de metadata
-xref Length: Número de Xrefs
-obj: Número de palavras-chave indicando o início de objetos
-endobj: Número de palavras-chave indicando o ﬁm de objetos
-JS: Número de palavras-chave “/JS”
-Javascript: Número de palavras-chave “/JavaScript”
+pdfsize: Tamanho do arquivo;
+metadata size: Tamanho da região de metadata;
+xref Length: Número de Xrefs;
+obj: Número de palavras-chave indicando o início de objetos;
+endobj: Número de palavras-chave indicando o ﬁm de objetos;
+JS: Número de palavras-chave “/JS”;
+Javascript: Número de palavras-chave “/JavaScript”;
 
 Por meio das opções de classificação e pesquisa do programa, foi-se escolhido as características que mais prevaleceram em diferentes ranqueamentos e que estiveram acima do limiar 0.5 utilizando o método Information Gain:
 
@@ -81,14 +81,19 @@ Ao observar os dados, alguns problemas foram detectados, logo, eles tiveram que 
 Linhas removidas inteiramente:
 
 ---> not a number
+
 ---> dados inconclusivos, X (1) ou X (2), exemplo 1 (1) em uma coluna de contagem de uma tag
+
 ---> resquícios de erros em programas bash
+
 ---> dados inconclusivos, -1 em campos de contagem de uma tag, suponho que seja para indicar um erro (não é explicado no artigo do dataset, nem encontrei uma referência para isso no programa extrator que gerou o dataset), então foram descartados
 
 Colunas removidas inteiramente:
 
 ---> text: Inicialmente a ideia era indicar se no pdf há texto (uma vez que apresentação não é uma preocupação em situações maliciosas), entretanto não ficou claro a distinção entre os possíveis valores do campo: -1, 0, unclear, no e yes
+
 ---> header: Tinha a ideia de indicar a versão do padrão pdf utilizado, entretanto não havia uma padronização em como os dados eram apresentados e muitos não faziam sentido
+
 ---> file name: Não há a necessidade de saber o nome do arquivo por hora
 
 Contagem de dados:
