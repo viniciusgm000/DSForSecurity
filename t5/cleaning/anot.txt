@@ -1,0 +1,35 @@
+remover coluna  filename
+
+
+
+
+
+
+
+(1)
+remover coluna text por inteiro
+remover bin/bash talvez remover coluna header
+
+
+
+(1)
+
+
+
+(1) (2)
+
+
+(1) (2)
+
+(1)
+(1) (2)
+(1)
+(1)
+(1) (2)
+(1)
+(1) (2)
+(1)
+
+
+
+cat data.csv | cut -d',' -f1,10-11 --complement
