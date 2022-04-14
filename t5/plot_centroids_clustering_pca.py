@@ -1,19 +1,19 @@
 #!/usr/bin/python
+# -*- encoding: iso-8859-1 -*-
 
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
+from sklearn.preprocessing import normalize
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np 
 
-def NormalizeData(data):
-    return (data - np.min(data)) / (np.max(data) - np.min(data))
-
-df=pd.read_csv("data_final.csv")
+df = pd.read_csv("data_final.csv")
 df.drop(columns=['Class'], inplace=True)
 values = df.values
-
-data = NormalizeData(values)
+# inverter normalizacao e pca
+# quadratic normalization: https://stats.stackexchange.com/questions/225564/scikit-learn-normalization-mode-l1-vs-l2-max
+data = normalize(values, norm='l2')
 
 reduced_data = PCA(n_components=2).fit_transform(data)
 kmeans = KMeans(init="k-means++", n_clusters=2, n_init=4)
@@ -57,11 +57,10 @@ plt.scatter(
     zorder=10,
 )
 plt.title(
-    "K-means clustering on the dataset (PCA-reduced data)\n"
-    "Centroids are marked with white cross"
+    "K-means clustering on the dataset (PCA-reduced data)"
 )
 plt.xlim(x_min, x_max)
 plt.ylim(y_min, y_max)
 plt.xticks(())
 plt.yticks(())
-plt.savefig("pca.png")
+plt.savefig("centroids_clustering_pca.png")
