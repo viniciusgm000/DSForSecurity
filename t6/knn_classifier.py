@@ -3,9 +3,10 @@
 
 # KNN classifier
 
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import normalize
 
@@ -39,7 +40,9 @@ Y_pred = knn.predict(X_test)
 # acurácia
 print("\nBenign 0 - Malicious 1")
 print('Acuracia: ', knn.score(X_test, Y_test))
-print(confusion_matrix(Y_test, Y_pred))
+cm = confusion_matrix(Y_test, Y_pred)
+print(cm)
 print(classification_report(Y_test, Y_pred, labels=[0, 1]))
-# print(Y_test[20:50])
-# print(Y_pred[20:50])
+cmd = ConfusionMatrixDisplay(cm, display_labels=['Malicious','Benign'])
+cmd.plot()
+plt.savefig('knn.png')

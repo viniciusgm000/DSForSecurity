@@ -1,11 +1,12 @@
 #!/usr/bin/python
 # -*- encoding: iso-8859-1 -*-
 
-# KNN classifier
+# Random Forest classifier
 
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import normalize
 
@@ -34,16 +35,18 @@ X = pd.DataFrame(normalized_data)
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42, stratify=Y)
 
 # cria o classificador
-knn = RandomForestClassifier(n_jobs = -1)
-knn.fit(X_train, Y_train)
+randomforest = RandomForestClassifier(n_jobs = -1)
+randomforest.fit(X_train, Y_train)
 
 # classifica
-Y_pred = knn.predict(X_test)
+Y_pred = randomforest.predict(X_test)
 
 # acurácia
 print("\nBenign 0 - Malicious 1")
-print('Acuracia: ', knn.score(X_test, Y_test))
-print(confusion_matrix(Y_test, Y_pred))
+print('Acuracia: ', randomforest.score(X_test, Y_test))
+cm = confusion_matrix(Y_test, Y_pred)
+print(cm)
 print(classification_report(Y_test, Y_pred, labels=[0, 1]))
-# print(Y_test[20:50])
-# print(Y_pred[20:50])
+cmd = ConfusionMatrixDisplay(cm, display_labels=['Malicious','Benign'])
+cmd.plot()
+plt.savefig('randomforest.png')
