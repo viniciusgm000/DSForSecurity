@@ -134,6 +134,10 @@ KNN:
 
 ![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t6/knn_results.png)
 
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t6/knn.png)
+
 Random Forest:
 
 ![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t6/random_forest_results.png)
+
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t6/randomforest.png)
