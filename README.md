@@ -16,6 +16,8 @@ t4 (tarefa 4): Definição de um vetor de características, apresentação da qu
 
 t5 (tarefa 5): Limpeza/Tratamento dos dados, melhor seleção das características - por meio da utilização da ferramenta WEKA - e clusterização dos dados utilizando KMeans com a plotagem sendo feita utilizando PCA.
 
+t6 (tarefa 6): Classificação dos dados utilizando KNN e Random Forest, apresentando os resultados obtidos.
+
 # Exploração de Dados
 
 Explorando o dataset PDFMalware2022, as seguintes características foram extraídas com base no entendimento sobre elas (algumas não tiveram a diferenciação clara entre si):
@@ -112,6 +114,26 @@ Scatterplot (vermelho = benign, azul = malicious):
 
 ![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t5/scatterplot.png)
 
-KMeans com PCA:
+# Clusterização
 
-![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t5/pca.png)
+KMeans com PCA - Centróides:
+
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t5/centroids_clustering_pca.png)
+
+KMeans com PCA - Clusters predição:
+
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t5/clustering_pca_fl.png)
+
+KMeans com PCA - Clusters originais:
+
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t5/clustering_pca_ol.png)
+
+# Classificação
+
+KNN:
+
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t6/knn_results.png)
+
+Random Forest:
+
+![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/t6/random_forest_results.png)
