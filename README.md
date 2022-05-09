@@ -179,6 +179,16 @@ A solução que se visa atingir é a de detecção em tempo real, por parte de u
 - Classe positiva: Malicious - 1
 - Classe negativa: Benign - 0
 
+## Ambiente de execução
+
+Sistema Operacional: Ubuntu 20.04
+
+Processador: Ryzen 5 3600 4.2 GHz - 32 MB cache L3
+
+RAM: 16 GB 3000 MHz
+
+Disco: HDD 7200 rpm/SSD 550 MB/s (escrita e leitura)
+
 ## Grid Search:
 
 ![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/tfinal/grid_search/results.png)
