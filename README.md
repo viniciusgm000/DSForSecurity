@@ -33,6 +33,8 @@ tfinal (tarefa final): A partir da remoção de 20% dos dados do dataset, com os
 
 **LINK #4** - Bibliotecas Python: https://numpy.org, https://matplotlib.org, https://scikit-learn.org/stable/ e https://pandas.pydata.org
 
+**LINK #5** - Parser dos autores (PDF -> atributos): https://github.com/ahlashkari/PDFMalLyzer
+
 # O Dataset
 
 O dataset PDFMalware2022 é resultante de um estudo por parte dos autores (Issakhani, M. et al. 2022), sobre diferentes modelos propostos para a detecção de agentes maliciosos em arquivos PDF e dos datasets utilizados nestes experimentos, e da proposta de um modelo baseado em empilhamento de classificadores por parte deles.
@@ -239,3 +241,8 @@ SVC:
 
 ![figure](https://github.com/viniciusgm000/DSForSecurity/blob/main/tfinal/training_models/cm_figures/SVC-1.png)
 
+# Apresentação
+
+No dia da apresentação, foi realizado uma demonstração com os 20% de dados removidos do dataset original e exemplos da vida real providos pelo professor.
+
+[Link para a apresentação](https://github.com/viniciusgm000/DSForSecurity/blob/main/apresentacaoCienciaDados.pdf)
